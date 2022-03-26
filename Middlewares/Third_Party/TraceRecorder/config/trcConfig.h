@@ -26,7 +26,7 @@ extern "C" {
  * Try that in case of build problems. Otherwise, remove the #error line below.
  *****************************************************************************/
 //#error "Trace Recorder: Please include your processor's header file here and remove this line."
-#include "stm32f4xx.h"
+#include "stm32h7xx.h"
 
 /*******************************************************************************
  * Configuration Macro: TRC_CFG_HARDWARE_PORT
@@ -297,7 +297,7 @@ extern "C" {
  * not created if stack monitoring is disabled. TRC_CFG_CTRL_TASK_PRIORITY should
  * be low, to avoid disturbing any time-sensitive tasks.
  ******************************************************************************/
-#define TRC_CFG_CTRL_TASK_PRIORITY 1
+#define TRC_CFG_CTRL_TASK_PRIORITY 5
 
  /*******************************************************************************
  * Configuration Macro: TRC_CFG_CTRL_TASK_DELAY
